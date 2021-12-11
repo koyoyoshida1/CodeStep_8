@@ -1,0 +1,36 @@
+header {
+  border-bottom: solid 1px $gray;
+  margin: 3.2% 15%;
+  
+  .img{
+    width: 109px;
+    line-height: 1px;
+    margin: 0 auto 3.5%;
+
+    a {
+      display: block
+    }
+  }
+  
+  nav {
+    @include flex;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 2.75%;
+    ul {
+      display: flex;
+      
+      li {
+        padding-right: 1vw;
+      }
+    }
+  }
+
+  .first {
+    margin-left: 10%;
+  }
+
+  .second {
+    margin-right: 10%;
+  }
+}

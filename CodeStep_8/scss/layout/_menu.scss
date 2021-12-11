@@ -1,0 +1,105 @@
+#menu {
+  margin: 0 15%;
+
+  .item {
+    @include flex;
+
+    &_img {
+      width: 40%;
+      flex-shrink: 0;
+      margin: 0 2.5% 0 10%;
+      // 画像が縮小されるのを防ぐ
+    }
+
+    &_list {
+      margin: 0 20% 0 0;
+
+      h1 {
+        height: 5vh;
+        @include flex;
+        align-items: center;
+        border-top: solid 1px $gray;
+        border-bottom: solid 1px $gray;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 5%;
+      }
+
+      p {
+        margin-bottom: 5%;
+        line-height: 1.9;
+      }
+
+      &_order {
+        width: 100%;
+        margin-bottom: 2%;
+
+        .blank {
+          width: 60%;
+          border-right: none;
+        }
+        .pi {
+          width: 20%;
+        }
+
+        .pid {
+          border-right: none;
+        }
+
+        .pidi {
+          border-bottom: solid 1px $gray;
+        }
+
+        td {
+          border-top: solid 1px $gray;
+        }
+
+        th, td {
+          font-weight: normal;
+          padding: 3%;
+          border-right: solid 1px $gray;
+          text-align: center;
+        }
+
+        select {
+          width: 100%;
+          border: solid 1px $gray;
+          padding: 0 3%;
+          // セレクトボックスに右端の矢印を表示する
+          -moz-appearance: menulist;
+          -webkit-appearance: menulist;
+        }
+
+        &._size {
+          width: 100%;
+          border-top: solid 1px $gray;
+          border-left: solid 1px $gray;
+
+          .pi._1 {
+            width: 16%;
+          }
+
+          .pi._2 {
+            width: 28%;
+          }
+
+          th {
+            background-color: $gray2;
+            color: $white;
+          }
+        }
+      }
+
+      .btn {
+        width: 100%;
+        background-color: $gray2;
+        color: $white;
+        line-height: 1;
+        display: block;
+        padding: 5% 0;
+        margin-bottom: 3%;
+        text-align: center;
+      }
+    }
+  }
+}
